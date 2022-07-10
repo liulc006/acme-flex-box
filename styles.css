@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    font-family: verdana;
+}
+
+.header {
+    display: flex;
+    background-color: dodgerblue;
+    align-items: center;
+    color: white;
+    height: 4rem;
+}
+
+.header > div {
+    flex: 1;
+    padding-left: 1rem;
+}
+
+nav {
+    display: flex;
+    flex: 3;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#users {
+    font-weight: bold;
+}
+
+
