@@ -1,6 +1,16 @@
+* {
+    color: rgb(109, 105, 105);
+}
+
 body {
     margin: 0;
     font-family: verdana;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    min-width: 250px;
 }
 
 .header {
@@ -27,8 +37,113 @@ nav a {
     text-decoration: none;
 }
 
-#users {
+#users_nav {
     font-weight: bold;
 }
 
+.user > h2 {
+    padding-left: 1rem;
+}
 
+.create_user {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 0 20% 0 20%;
+    padding: 0.5rem;
+}
+
+.create_user > h2 {
+    margin:0;
+    margin-bottom: 20px;
+
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+form > label {
+    flex: 0 0 20%;
+    margin-bottom: 20px;
+
+}
+
+form > input, select {
+    flex: 0 0 calc(80% - 0.5rem);
+    margin-bottom: 20px;
+}
+
+
+.buttons {
+    display: flex;
+    margin-left: 40%;
+}
+
+.Save-Button {
+    color: white;
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: left;
+    
+}
+
+.user-bio {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc(33% - 2rem);
+    border: solid black 1px;
+    border-radius: 15px;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+
+@media (max-width: 800px) {
+    .header{
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav > a {
+       padding-left: 1rem;
+    }
+
+    .create_user {
+        flex-direction: column;
+        margin: 0 5% 0 5%;
+        padding: 0.5rem;
+    }
+
+    .buttons {
+        display: flex;
+        margin-left: 35%;
+    }
+
+    form > label {
+        flex: 0 0 30%;
+        margin-bottom: 0px;
+    }
+
+    .user-bio {
+        display: flex;
+        flex: 0 0 90%;
+        margin: 0 5% 2% 5%;
+    }
+
+
+
+}
